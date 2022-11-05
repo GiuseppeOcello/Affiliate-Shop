@@ -1,0 +1,79 @@
+/*wrapper for donate button and manual ads insertions*/
+.products-wrapper {
+    display: flex;
+    padding: 20px;
+	flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+	gap: 15px;
+}
+
+/*Product box*/
+.product-box {
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+	border-radius: 15px;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.4s;
+}
+
+.product-box:hover {
+    transform: scale(1.25);
+}
+
+.product-image {
+    width: 140px;
+    height: 140px;
+}
+
+.product-title {
+    margin: 5px 0 4px 0;
+    padding: 0 4px 0 4px;
+    color: #3c4a64;
+    border-bottom: solid 2px lightgray;
+}
+
+.product-cost {
+    margin: 4px;
+    font-size: 1.25em;
+    color: #ffc500;
+}
+
+.product-description-title {
+    margin: 0;
+    align-self: flex-start;
+}
+
+.product-description {
+    padding-left: 2px;
+}
+
+.product-btn {
+    width: 80%;
+    padding: 4px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 2em;
+    text-align: center;
+    background-color: #3c4a64;
+    color: #ffc500;
+    transition: all 0.4s;
+}
+
+.product-btn:hover {
+    background-color: #ffc500;
+    color: #3c4a64;
+}
+
+@media screen and (min-width: 768px) {
+    .product-image {
+      width: 250px;
+      height: 250px;
+      }
+  }
